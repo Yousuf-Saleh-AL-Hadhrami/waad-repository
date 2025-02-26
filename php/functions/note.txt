@@ -1,0 +1,6 @@
+
+Types of Functions:
+
+- Built-in functions الدوال الجاهزة المبنية في اللغة
+- User defined functions الدوال التي يقوم بتعريفها المبرمج والتي هي غير موجوة في اللغة
+
