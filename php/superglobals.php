@@ -9,6 +9,7 @@ date_default_timezone_set('Asia/Muscat');
 2 - $_POST => passing data between pages though a form
 3 - $_REQUEST => [ $_GET , POST ]
 4 - $_SERVER  => [ shows information about the client and server]
+5 - $_FILES   => [ to upload multi media files ]
 5 - $_COOKIE  => [ Piece of data stored in the brower  ]
 6 - $_SESSION => [ store data on server and the id will be stored in the browser cookie ]
 
