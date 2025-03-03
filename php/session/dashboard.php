@@ -7,7 +7,7 @@ if(isset($_SESSION['is_logged_in']) && $_SESSION['is_logged_in'] == true){
  echo "Welcome " . $_SESSION['username'];
 
  echo "<a href='Images.php'>Images</a>";
-echo "<a href='logout.php'>Logout</a>";
+ echo "<a href='logout.php'>Logout</a>";
 
 ?>
 

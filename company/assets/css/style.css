@@ -1,0 +1,21 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: beige;
+}
+
+/* Custom styling to center the form */
+body,
+html {
+  height: 100%;
+}
+
+.login-container {
+  height: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
