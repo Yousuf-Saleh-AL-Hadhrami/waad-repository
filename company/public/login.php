@@ -1,6 +1,6 @@
 <?php 
 
-include "./includes/header.php";
+include "./../includes/header.php";
 
 ?>
 
@@ -31,7 +31,7 @@ include "./includes/header.php";
 
 <?php
 
-include "./includes/dbconnect.php";
+include "./../includes/dbconnect.php";
 
 session_start();
 
@@ -56,12 +56,12 @@ if($_SERVER['REQUEST_METHOD'] === 'POST'){
 
             if($_SESSION['role'] === 'admin'){
 
-                header("location:admin/dashboard.php");
+                header("location:./../admin/dashboard.php");
                 exit;
 
             } else {
 
-                header("location:user/dashboard.php");
+                header("location:./../user/dashboard.php");
                 exit;
             }
 
@@ -77,6 +77,6 @@ if($_SERVER['REQUEST_METHOD'] === 'POST'){
 
 
 
-include "./includes/footer.php";
+include "./../includes/footer.php";
 
 

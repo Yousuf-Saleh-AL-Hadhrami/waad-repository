@@ -1,6 +1,7 @@
 <?php 
 
 
-define('STYLE', 'http://localhost/waad/company/assets/css/');
+define('STYLE', 'http://localhost/waad/company/assets/css');
+
 
 ?>

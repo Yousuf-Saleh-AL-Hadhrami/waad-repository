@@ -4,12 +4,16 @@ session_start();
 
 if(isset($_SESSION['logged_in']) && $_SESSION['logged_in'] == true){
 
- echo " Welcome " . $_SESSION['name'];
+include "./../includes/header.php";
 
- echo "<a href='./../logout.php'>Logout</a>";
+
+
+
+
+include "./../includes/footer.php";
 
 } else {
 
-    header("location:./../login.php");
+    header("location:./../public/login.php");
     exit;
 }
