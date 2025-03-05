@@ -4,6 +4,8 @@
 
 <?php 
 require_once "./../config/app.php";
+
+date_default_timezone_set('Asia/Muscat');
 ?> 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -27,10 +29,13 @@ if(isset($_SESSION['logged_in'])){?>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="dashboard.php">Home</a>
+          <a class="nav-link active" aria-current="page" href="dashboard.php?page=Index">Dashboard</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="users.php?page=Index">Users</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="departments.php?page=Index">Departments</a>
         </li>
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -44,10 +49,7 @@ if(isset($_SESSION['logged_in'])){?>
           </ul>
         </li>
       </ul>
-      <form class="d-flex" role="search">
-        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-        <button class="btn btn-outline-success" type="submit">Search</button>
-      </form>
+      <div class="d-flex"><?= date('Y-m-d H:i:s') ?></div>
     </div>
   </div>
 </nav>
